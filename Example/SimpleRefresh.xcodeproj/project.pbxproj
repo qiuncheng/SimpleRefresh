@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		33D028F0B3390732370B8133 /* Pods_SimpleRefresh_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFC8D355C4FE1AD79B1B1FE3 /* Pods_SimpleRefresh_Tests.framework */; };
+		3FFBFB0B2227B1E800456D71 /* HeaderAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFBFB092227B1E700456D71 /* HeaderAnimationView.swift */; };
+		3FFBFB0C2227B1E800456D71 /* AmazingHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFBFB0A2227B1E700456D71 /* AmazingHeader.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -29,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		01490CE76B5EDA4462D773A5 /* Pods-SimpleRefresh_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleRefresh_Tests.release.xcconfig"; path = "Target Support Files/Pods-SimpleRefresh_Tests/Pods-SimpleRefresh_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3FFBFB092227B1E700456D71 /* HeaderAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderAnimationView.swift; sourceTree = "<group>"; };
+		3FFBFB0A2227B1E700456D71 /* AmazingHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmazingHeader.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SimpleRefresh_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleRefresh_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,12 +43,12 @@
 		607FACE51AFB9204008FA782 /* SimpleRefresh_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleRefresh_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6490CBB01148102FCB8B777C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6490CBB01148102FCB8B777C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		73D9FD3E61F08E30048BB1E8 /* Pods-SimpleRefresh_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleRefresh_Example.release.xcconfig"; path = "Target Support Files/Pods-SimpleRefresh_Example/Pods-SimpleRefresh_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8F6EAA9D8A647631DA5E0136 /* Pods_SimpleRefresh_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleRefresh_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9EF8B8C804DC2EC9B9B5A45 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B9EF8B8C804DC2EC9B9B5A45 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C8C17948A96F3F59500F9508 /* Pods-SimpleRefresh_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleRefresh_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleRefresh_Tests/Pods-SimpleRefresh_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C8D00791FED01D65D14530C3 /* SimpleRefresh.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SimpleRefresh.podspec; path = ../SimpleRefresh.podspec; sourceTree = "<group>"; };
+		C8D00791FED01D65D14530C3 /* SimpleRefresh.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SimpleRefresh.podspec; path = ../SimpleRefresh.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EA8C0304F86CAA06C5C996DE /* Pods-SimpleRefresh_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleRefresh_Example.debug.xcconfig"; path = "Target Support Files/Pods-SimpleRefresh_Example/Pods-SimpleRefresh_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FFC8D355C4FE1AD79B1B1FE3 /* Pods_SimpleRefresh_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleRefresh_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -78,6 +82,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3FFBFB172227BE4C00456D71 /* Tongzhuo */ = {
+			isa = PBXGroup;
+			children = (
+				3FFBFB0A2227B1E700456D71 /* AmazingHeader.swift */,
+				3FFBFB092227B1E700456D71 /* HeaderAnimationView.swift */,
+			);
+			name = Tongzhuo;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -88,7 +101,9 @@
 				90E8C782EAAEAC5BC390D83F /* Pods */,
 				0C97B40482838140DD51AC74 /* Frameworks */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
@@ -102,6 +117,7 @@
 		607FACD21AFB9204008FA782 /* Example for SimpleRefresh */ = {
 			isa = PBXGroup;
 			children = (
+				3FFBFB172227BE4C00456D71 /* Tongzhuo */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -156,7 +172,6 @@
 				C8C17948A96F3F59500F9508 /* Pods-SimpleRefresh_Tests.debug.xcconfig */,
 				01490CE76B5EDA4462D773A5 /* Pods-SimpleRefresh_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,16 +223,20 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						DevelopmentTeam = JDTEF93AA4;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Automatic;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						DevelopmentTeam = JDTEF93AA4;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -336,6 +355,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				3FFBFB0B2227B1E800456D71 /* HeaderAnimationView.swift in Sources */,
+				3FFBFB0C2227B1E800456D71 /* AmazingHeader.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,12 +411,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -423,7 +446,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -443,12 +466,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -469,7 +494,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -482,13 +507,16 @@
 			baseConfigurationReference = EA8C0304F86CAA06C5C996DE /* Pods-SimpleRefresh_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JDTEF93AA4;
 				INFOPLIST_FILE = SimpleRefresh/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vsccw.SimpleRefresh-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -497,13 +525,16 @@
 			baseConfigurationReference = 73D9FD3E61F08E30048BB1E8 /* Pods-SimpleRefresh_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JDTEF93AA4;
 				INFOPLIST_FILE = SimpleRefresh/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vsccw.SimpleRefresh-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -511,6 +542,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C8C17948A96F3F59500F9508 /* Pods-SimpleRefresh_Tests.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JDTEF93AA4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -523,8 +557,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleRefresh_Example.app/SimpleRefresh_Example";
 			};
 			name = Debug;
@@ -533,6 +567,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 01490CE76B5EDA4462D773A5 /* Pods-SimpleRefresh_Tests.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JDTEF93AA4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -541,8 +578,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleRefresh_Example.app/SimpleRefresh_Example";
 			};
 			name = Release;

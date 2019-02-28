@@ -1,3 +1,5 @@
+platform :ios, "8.0"
+
 use_frameworks!
 
 target 'SimpleRefresh_Example' do
@@ -5,7 +7,6 @@ target 'SimpleRefresh_Example' do
 
   target 'SimpleRefresh_Tests' do
     inherit! :search_paths
-
     
   end
 end

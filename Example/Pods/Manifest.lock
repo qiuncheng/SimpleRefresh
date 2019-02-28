@@ -1,0 +1,16 @@
+PODS:
+  - SimpleRefresh (0.0.1)
+
+DEPENDENCIES:
+  - SimpleRefresh (from `../`)
+
+EXTERNAL SOURCES:
+  SimpleRefresh:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SimpleRefresh: 2bf0795083853cb3321e277feb7d1bea7effba6d
+
+PODFILE CHECKSUM: 4556a782c159e7325246866ad866feb30aa1aca9
+
+COCOAPODS: 1.6.1

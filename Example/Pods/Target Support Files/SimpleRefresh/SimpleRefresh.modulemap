@@ -1,0 +1,6 @@
+framework module SimpleRefresh {
+  umbrella header "SimpleRefresh-umbrella.h"
+
+  export *
+  module * { export * }
+}

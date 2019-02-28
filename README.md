@@ -1,6 +1,6 @@
 # SimpleRefresh
 
-[![CI Status](https://img.shields.io/travis/mdj940619@163.com/SimpleRefresh.svg?style=flat)](https://travis-ci.org/mdj940619@163.com/SimpleRefresh)
+[![CI Status](https://img.shields.io/travis/qiuncheng/SimpleRefresh.svg?style=flat)](https://travis-ci.org/qiuncheng/SimpleRefresh)
 [![Version](https://img.shields.io/cocoapods/v/SimpleRefresh.svg?style=flat)](https://cocoapods.org/pods/SimpleRefresh)
 [![License](https://img.shields.io/cocoapods/l/SimpleRefresh.svg?style=flat)](https://cocoapods.org/pods/SimpleRefresh)
 [![Platform](https://img.shields.io/cocoapods/p/SimpleRefresh.svg?style=flat)](https://cocoapods.org/pods/SimpleRefresh)
@@ -22,7 +22,7 @@ pod 'SimpleRefresh'
 
 ## Author
 
-mdj940619@163.com, qiuncheng@gmail.com
+qiuncheng@gmail.com
 
 ## License
 
