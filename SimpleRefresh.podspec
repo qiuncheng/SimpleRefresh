@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.swift_version = "4.2"
 
   s.source_files = "SimpleRefresh/Classes/**/*"
-  s.resources = ["SimpleRefresh/Assets/*.png"]
+  s.resources = ["SimpleRefresh/Assets/*.xcassets"]
   # s.resource_bundles = {
   #   "SimpleRefresh" => ["SimpleRefresh/Assets/*.png"],
   # }

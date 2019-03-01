@@ -12,8 +12,8 @@ open class NormalAnimation: SimpleAnimationView {
     public let imageView: UIImageView = {
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
         imageView.contentMode = .scaleAspectFit
-        let image = UIImage.named("arrow-down@3x.png")
-        imageView.image = image?.withRenderingMode(.alwaysOriginal)
+        let image = UIImage.named("arrow-down.png")
+        imageView.image = image?.withRenderingMode(.alwaysTemplate)
         imageView.tintColor = .gray
         imageView.isHidden = true
         return imageView
