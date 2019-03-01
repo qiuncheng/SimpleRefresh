@@ -34,6 +34,6 @@ platform :ios do
     git_commit(path: ["./*.swift", "./SimpleRefresh.podspec"], message: "Bump new version #{new_version}")
     add_git_tag(tag: new_version)
     push_to_git_remote
-    pod_push
+    pod_push(allow_warnings: true)
   end
 end
