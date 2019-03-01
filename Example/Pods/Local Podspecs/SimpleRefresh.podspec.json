@@ -1,7 +1,7 @@
 {
   "name": "SimpleRefresh",
   "version": "0.0.1",
-  "summary": "A short description of SimpleRefresh.",
+  "summary": "So simple pull to refresh framework in iOS written by Swift4.2",
   "description": "A simple pull to refresh lib with highly customizable animation.",
   "homepage": "https://github.com/qiuncheng/SimpleRefresh",
   "license": {
@@ -22,6 +22,6 @@
   "swift_version": "4.2",
   "source_files": "SimpleRefresh/Classes/**/*",
   "resources": [
-    "SimpleRefresh/Assets/arrow-down.png"
+    "SimpleRefresh/Assets/*.xcassets"
   ]
 }
