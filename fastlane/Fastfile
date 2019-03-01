@@ -23,18 +23,17 @@ platform :ios do
     # add actions here: https://docs.fastlane.tools/actions
     new_version = options[:version]
     raise "Version is missing" if new_version.nil?
-    # ensure_git_branch
-    # ensure_git_status_clean
+    ensure_git_branch
+    ensure_git_status_clean
 
-    # if git_tag_exists(tag: new_version)
-    #   raise "Version is already exits"
-    # end
-    puts new_version
+    if git_tag_exists(tag: new_version)
+      raise "Version is already exits"
+    end
     version = version_bump_podspec(path: "SimpleRefresh.podspec", version_number: "#{new_version}")
-    puts version
-    # git_commit(path: "./*", message: "Bump new version #{new_version}")
-    # add_git_tag(tag: new_version)
-    # push_to_git_remote
-    # pod_push
+
+    git_commit(path: ["./*.swift", "./SimpleRefresh.podspec"], message: "Bump new version #{new_version}")
+    add_git_tag(tag: new_version)
+    push_to_git_remote
+    pod_push
   end
 end
