@@ -29,10 +29,11 @@ platform :ios do
     if git_tag_exists(tag: new_version)
       raise "Version is already exits"
     end
-    version_bump_podspec(path: "SimpleRefresh.podspec", version_number: new_version)
-    sh("git commit -am bump new version #{version_number}")
+    version_bump_podspec(path: "SimpleRefresh.podspec", version_number: "#{new_version}")
+
+    git_commit(path: ["./*.swift", "./SimpleRefresh.podspec"], message: "Bump new version #{new_version}")
     add_git_tag(tag: new_version)
     push_to_git_remote
-    pod_push
+    pod_push(allow_warnings: true)
   end
 end
