@@ -1,5 +1,5 @@
 PODS:
-  - SimpleRefresh (0.0.1)
+  - SimpleRefresh (0.0.2)
 
 DEPENDENCIES:
   - SimpleRefresh (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SimpleRefresh: 05b183f184907c6b7e0fa9cb9dfc13f8bbd9ee50
+  SimpleRefresh: fe7c48b0c0d4bdacb48264d3038913d9c0ebb7bb
 
 PODFILE CHECKSUM: 4556a782c159e7325246866ad866feb30aa1aca9
 

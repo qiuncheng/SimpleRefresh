@@ -27,13 +27,15 @@ public class SimpleFooterControl: SimpleRefreshControl {
         scrollView.smp.contentInsets = inset
     }
     
-    override func startRefresh(scrollView: UIScrollView) {
+    override func startRefresh(scrollView: UIScrollView, trigger: Bool) {
         guard !isRefreshing else { return }
         isRefreshing = true
         animationView.willStartRefresh(scrollView)
         DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(650)) { [weak self] in
             guard self != nil else { return }
-            self?.sendActions(for: .valueChanged)
+            if trigger {
+                self?.sendActions(for: .valueChanged)
+            }
         }
     }
     
@@ -64,7 +66,7 @@ public class SimpleFooterControl: SimpleRefreshControl {
         let currentOffsetY = scrollView.smp.contentInsets.top + previewContentOffsetY
         let shouldStart = animationView.shouldStartRefresh(scrollView, percent: percent, currentOffsetY: currentOffsetY, offsetYDidChange: offsetYDidChange)
         if shouldStart {
-            startRefresh(scrollView: scrollView)
+            startRefresh(scrollView: scrollView, trigger: true)
         }
         previewContentOffsetY = scrollView.contentOffset.y
     }

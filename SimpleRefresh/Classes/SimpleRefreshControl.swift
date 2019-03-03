@@ -36,7 +36,7 @@ public class SimpleRefreshControl: UIControl {
         super.removeFromSuperview()
     }
     
-    internal func startRefresh(scrollView: UIScrollView) {
+    internal func startRefresh(scrollView: UIScrollView, trigger: Bool) {
         
     }
     

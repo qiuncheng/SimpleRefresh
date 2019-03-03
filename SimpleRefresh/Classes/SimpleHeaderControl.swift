@@ -18,7 +18,7 @@ public class SimpleHeaderControl: SimpleRefreshControl {
         return nil
     }
     
-    override func startRefresh(scrollView: UIScrollView) {
+    override func startRefresh(scrollView: UIScrollView, trigger: Bool) {
         guard !isRefreshing else { return }
         isRefreshing = true
         var insets = scrollView.smp.contentInsets
@@ -34,7 +34,9 @@ public class SimpleHeaderControl: SimpleRefreshControl {
             scrollView.contentOffset.y = -insets.top
             scrollView.smp.contentInsets = insets
             scrollView.bounces = previewBounces
-            self?.sendActions(for: .valueChanged)
+            if trigger {
+                self?.sendActions(for: .valueChanged)
+            }
             self?.isRefreshing = true
         }
     }
@@ -68,7 +70,7 @@ public class SimpleHeaderControl: SimpleRefreshControl {
         let percent: Float = Float(currentOffsetY / animationView.size)
         let shouldStart = animationView.shouldStartRefresh(scrollView, percent: percent, currentOffsetY: currentOffsetY, offsetYDidChange: offsetYDidChange)
         if shouldStart {
-            startRefresh(scrollView: scrollView)
+            startRefresh(scrollView: scrollView, trigger: true)
         }
         previewContentOffsetY = scrollView.contentOffset.y
     }

@@ -63,7 +63,11 @@ public extension Simple where Base: UIScrollView {
     }
     
     public func startHeaderRefresh() {
-        self.header?.startRefresh(scrollView: base)
+        self.header?.startRefresh(scrollView: base, trigger: true)
+    }
+    
+    public func startHeaderAnimation() {
+        self.header?.startRefresh(scrollView: base, trigger: false)
     }
     
     public func stopHeaderRefresh() {
@@ -106,7 +110,11 @@ extension Simple where Base: UIScrollView {
     }
     
     public func startFooterRefresh() {
-        footer?.startRefresh(scrollView: base)
+        footer?.startRefresh(scrollView: base, trigger: true)
+    }
+    
+    public func startFooterAnimaiton() {
+        footer?.startRefresh(scrollView: base, trigger: false)
     }
     
     public func stopFooterRefresh() {
