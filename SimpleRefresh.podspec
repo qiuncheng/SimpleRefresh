@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "SimpleRefresh"
-  s.version = "0.0.3"
+  s.version = "0.0.4"
   s.summary = "So simple pull to refresh framework in iOS written by Swift4.2"
 
   # This description is used to generate tags and improve search results.
