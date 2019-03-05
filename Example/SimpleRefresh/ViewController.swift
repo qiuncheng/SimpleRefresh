@@ -29,7 +29,7 @@ class ViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    tableView.smp.addHeader(NormalHeaderAnimation(), target: self, action: #selector(handleHeaderRefresh))
+    tableView.smp.addHeader(AmazingHeader(), target: self, action: #selector(handleHeaderRefresh))
   }
   
   override func viewWillAppear(_ animated: Bool) {
