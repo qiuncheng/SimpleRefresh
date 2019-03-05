@@ -7,8 +7,8 @@ language: objective-c
 # cache: cocoapods
 # podfile: Example/Podfile
 before_install:
-  - gem update --system
-  - gem install # cocoapods # Since Travis is not always on latest version
+- gem update --system
+- bundle install # cocoapods # Since Travis is not always on latest version
 script:
 - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/SimpleRefresh.xcworkspace -scheme SimpleRefresh-Example -sdk iphonesimulator12.1 ONLY_ACTIVE_ARCH=NO | xcpretty
 - pod lib lint
