@@ -8,6 +8,8 @@ import UIKit.UIControl
 public class SimpleFooterControl: SimpleRefreshControl {
     
     private var hasSetContentInsetBottom = false
+    internal var waitingForDraw = false
+    internal var shouldTrigger = false
     
     public override init(frame: CGRect, animationView: SimpleAnimationView) {
         super.init(frame: frame, animationView: animationView)
@@ -20,6 +22,15 @@ public class SimpleFooterControl: SimpleRefreshControl {
         super.init(coder: aDecoder)
     }
     
+    public override func draw(_ rect: CGRect) {
+        super.draw(rect)
+        if waitingForDraw, let superView = superview as? UIScrollView {
+            startRefresh(scrollView: superView, trigger: shouldTrigger)
+        }
+        waitingForDraw = false
+        shouldTrigger = false
+    }
+    
     func resetScrollViewContentInset(scrollView: UIScrollView) {
         guard hasSetContentInsetBottom else { return }
         var inset = scrollView.smp.contentInsets
@@ -28,6 +39,11 @@ public class SimpleFooterControl: SimpleRefreshControl {
     }
     
     override func startRefresh(scrollView: UIScrollView, trigger: Bool) {
+        guard self.window != nil else {
+            shouldTrigger = trigger
+            waitingForDraw = true
+            return
+        }
         guard !isRefreshing else { return }
         isRefreshing = true
         animationView.willStartRefresh(scrollView)

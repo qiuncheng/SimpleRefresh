@@ -3,9 +3,13 @@
 //  Copyright © 2018年 Tongzhuo. All rights reserved.
 //
 
+import class UIKit.UIScrollView
+
 public class SimpleHeaderControl: SimpleRefreshControl {
     
     internal var isStopAnimating = false
+    internal var waitingForDraw = false
+    internal var shouldTrigger = false
     
     public override init(frame: CGRect, animationView: SimpleAnimationView) {
         super.init(frame: frame, animationView: animationView)
@@ -18,7 +22,22 @@ public class SimpleHeaderControl: SimpleRefreshControl {
         return nil
     }
     
+    public override func draw(_ rect: CGRect) {
+        super.draw(rect)
+        
+        if waitingForDraw, let superView = superview as? UIScrollView {
+            startRefresh(scrollView: superView, trigger: shouldTrigger)
+        }
+        waitingForDraw = false
+        shouldTrigger = false
+    }
+    
     override func startRefresh(scrollView: UIScrollView, trigger: Bool) {
+        guard self.window != nil else {
+            self.waitingForDraw = true
+            shouldTrigger = trigger
+            return
+        }
         guard !isRefreshing else { return }
         isRefreshing = true
         var insets = scrollView.smp.contentInsets
