@@ -36,6 +36,7 @@ public class SimpleFooterControl: SimpleRefreshControl {
         var inset = scrollView.smp.contentInsets
         inset.bottom -= animationView.size
         scrollView.smp.contentInsets = inset
+        hasSetContentInsetBottom = false
     }
     
     override func startRefresh(scrollView: UIScrollView, trigger: Bool) {
