@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		0368C38803AF2117FCA179FC6EEFEF92 /* DispatchQueue+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4274515EE34FCA4EC8C74C5EA25EE1 /* DispatchQueue+Ext.swift */; };
 		3505B9131769A69D255CD6390B034C9E /* Simple.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8681E409A91EB7D484E0619D17166B3 /* Simple.swift */; };
-		383EECE3E6FA802191C085C1F5CDCE0F /* SimpleAnimationProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BF0F51BDC8FF7397035387D0AA054 /* SimpleAnimationProxy.swift */; };
+		383EECE3E6FA802191C085C1F5CDCE0F /* SmpAnimationProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54BF0F51BDC8FF7397035387D0AA054 /* SmpAnimationProxy.swift */; };
+		3F282E27222FA16A0098E5EB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F282E26222FA16A0098E5EB /* Constants.swift */; };
+		3FFB86BA222F844100BDD1CC /* RefreshType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFB86B9222F844100BDD1CC /* RefreshType.swift */; };
 		40735C695015169FD16CA2B7A3CD4758 /* NormalFooterAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F21AB65F302206A27692E617210BDD /* NormalFooterAnimation.swift */; };
 		45EC76CAFFC74991A1A1763455BBA1E0 /* Pods-SimpleRefresh_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C944ED795068EA1DFE71D9FA3660FA /* Pods-SimpleRefresh_Example-dummy.m */; };
 		50D56497C5B80C00A4A90A95EE4670D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
@@ -19,16 +21,16 @@
 		6AB1B6C53F54D647FE3FC7683A4B3FC4 /* SimpleRefresh-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 113F24DAD3166CEBEFFF121F9BC1BD36 /* SimpleRefresh-dummy.m */; };
 		749E34436AD8764DD68E6EB741E1F093 /* Pods-SimpleRefresh_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C00B31CC7FF1942171AC7BB8D99DEBC9 /* Pods-SimpleRefresh_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79AE69AB4CA788C2F6748135FCC0D03F /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41212DB7A207FD7E1C123EA2B562D578 /* images.xcassets */; };
-		7F8550F4413DA514A246FE2FDDF80E8F /* NormalAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABC1862924A39B48C868C3F38AF9A53 /* NormalAnimation.swift */; };
-		8913D7080D3CE1C06312BCCBA93B220D /* SimpleFooterControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113E138909CA8899C57A975F651CA4CE /* SimpleFooterControl.swift */; };
+		7F8550F4413DA514A246FE2FDDF80E8F /* DefaultAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABC1862924A39B48C868C3F38AF9A53 /* DefaultAnimation.swift */; };
+		8913D7080D3CE1C06312BCCBA93B220D /* SmpFooterControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113E138909CA8899C57A975F651CA4CE /* SmpFooterControl.swift */; };
 		A423600C72CEA554453F820CD2BEF72B /* SimpleRefresh-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F334BEC1D9BCDEDA9571973ACCE07CC /* SimpleRefresh-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B242DF62C02FA8FEE08AA1B597CE19B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		BD64D24CF52B7D6C96724BEDD59765B5 /* SimpleRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C390A79BEBB2042431FE80A6D67ACCDF /* SimpleRefreshControl.swift */; };
+		BD64D24CF52B7D6C96724BEDD59765B5 /* SmpRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C390A79BEBB2042431FE80A6D67ACCDF /* SmpRefreshControl.swift */; };
 		D218E0AF1776F0B1D95244202FA87F7F /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1909C37BD2FA56582CA8AA8C6EC407AA /* UIImage+Ext.swift */; };
-		D3B217BF0E83EBE2274E9DE67D7BD1A4 /* SimpleHeaderControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECA612B83C5FE71496BCE9960D3C256 /* SimpleHeaderControl.swift */; };
-		D45DEBED0BDEEBAE104D1B160619891D /* UIScrollView+Simple.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08E06B02399658325361359A9CA3D63 /* UIScrollView+Simple.swift */; };
+		D3B217BF0E83EBE2274E9DE67D7BD1A4 /* SmpHeaderControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECA612B83C5FE71496BCE9960D3C256 /* SmpHeaderControl.swift */; };
+		D45DEBED0BDEEBAE104D1B160619891D /* UIScrollView+Smp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08E06B02399658325361359A9CA3D63 /* UIScrollView+Smp.swift */; };
 		D6603AAE2815A827CD9D9C476F66AAC3 /* Pods-SimpleRefresh_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 65588F6A37B5FBB17F4237312690AD11 /* Pods-SimpleRefresh_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F0D9846550049294A6A392EA315E01A6 /* NormalHeaderAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B837B3CC35DB91D3ACC97F7E8188EF /* NormalHeaderAnimation.swift */; };
+		F0D9846550049294A6A392EA315E01A6 /* DefaultHeaderAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B837B3CC35DB91D3ACC97F7E8188EF /* DefaultHeaderAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,49 +52,51 @@
 
 /* Begin PBXFileReference section */
 		00B2E1CF8CFB0F93507B95D94DF43BB5 /* Pods-SimpleRefresh_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleRefresh_Tests-Info.plist"; sourceTree = "<group>"; };
-		0409BE9944E16ACDDA1A6CF8D063BC7B /* SimpleRefresh.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SimpleRefresh.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		07B837B3CC35DB91D3ACC97F7E8188EF /* NormalHeaderAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NormalHeaderAnimation.swift; path = SimpleRefresh/Classes/NormalHeaderAnimation.swift; sourceTree = "<group>"; };
+		0409BE9944E16ACDDA1A6CF8D063BC7B /* SimpleRefresh.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SimpleRefresh.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		07B837B3CC35DB91D3ACC97F7E8188EF /* DefaultHeaderAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultHeaderAnimation.swift; path = SimpleRefresh/Classes/DefaultHeaderAnimation.swift; sourceTree = "<group>"; };
 		0AEE8825306364DE034F961E6C029733 /* Pods-SimpleRefresh_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SimpleRefresh_Example-frameworks.sh"; sourceTree = "<group>"; };
-		113E138909CA8899C57A975F651CA4CE /* SimpleFooterControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleFooterControl.swift; path = SimpleRefresh/Classes/SimpleFooterControl.swift; sourceTree = "<group>"; };
+		113E138909CA8899C57A975F651CA4CE /* SmpFooterControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SmpFooterControl.swift; path = SimpleRefresh/Classes/SmpFooterControl.swift; sourceTree = "<group>"; };
 		113F24DAD3166CEBEFFF121F9BC1BD36 /* SimpleRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimpleRefresh-dummy.m"; sourceTree = "<group>"; };
 		1909C37BD2FA56582CA8AA8C6EC407AA /* UIImage+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Ext.swift"; path = "SimpleRefresh/Classes/UIImage+Ext.swift"; sourceTree = "<group>"; };
 		1B3AF4345AB06E070D171F952D6E96C3 /* UIScrollView+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+Ext.swift"; path = "SimpleRefresh/Classes/UIScrollView+Ext.swift"; sourceTree = "<group>"; };
 		1F334BEC1D9BCDEDA9571973ACCE07CC /* SimpleRefresh-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleRefresh-umbrella.h"; sourceTree = "<group>"; };
 		271B6CDDFD7AF07EABD787B9B361ADA7 /* Pods-SimpleRefresh_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SimpleRefresh_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2ECA612B83C5FE71496BCE9960D3C256 /* SimpleHeaderControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleHeaderControl.swift; path = SimpleRefresh/Classes/SimpleHeaderControl.swift; sourceTree = "<group>"; };
+		2ECA612B83C5FE71496BCE9960D3C256 /* SmpHeaderControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SmpHeaderControl.swift; path = SimpleRefresh/Classes/SmpHeaderControl.swift; sourceTree = "<group>"; };
 		322DEB9BE500E2D748BE0A9D5CD08B37 /* Pods-SimpleRefresh_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SimpleRefresh_Tests-dummy.m"; sourceTree = "<group>"; };
 		35A5C390F0094BDD862C8F7F383A6AAC /* Pods-SimpleRefresh_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleRefresh_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		374508D19E7914DB636B28D71F9790B1 /* Pods-SimpleRefresh_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleRefresh_Example.release.xcconfig"; sourceTree = "<group>"; };
 		377D234715A50B5D6BD644D7C00DE2A8 /* Pods-SimpleRefresh_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleRefresh_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		3972AB2C24D96FA9C8FC352D5828D17A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		3972AB2C24D96FA9C8FC352D5828D17A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3F282E26222FA16A0098E5EB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = SimpleRefresh/Classes/Constants.swift; sourceTree = "<group>"; };
+		3FFB86B9222F844100BDD1CC /* RefreshType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RefreshType.swift; path = SimpleRefresh/Classes/RefreshType.swift; sourceTree = "<group>"; };
 		41212DB7A207FD7E1C123EA2B562D578 /* images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = images.xcassets; path = SimpleRefresh/Assets/images.xcassets; sourceTree = "<group>"; };
-		45DAFEFE9326B7F85817FBC4D3D4F2AA /* Pods_SimpleRefresh_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SimpleRefresh_Tests.framework; path = "Pods-SimpleRefresh_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45DAFEFE9326B7F85817FBC4D3D4F2AA /* Pods_SimpleRefresh_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleRefresh_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BCA77BB9D517A07C0BAF69F188319A0 /* Pods-SimpleRefresh_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleRefresh_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5C6A65E3DE5ACD2C9F80A17E091884C1 /* SimpleRefresh.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SimpleRefresh.modulemap; sourceTree = "<group>"; };
 		65588F6A37B5FBB17F4237312690AD11 /* Pods-SimpleRefresh_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SimpleRefresh_Tests-umbrella.h"; sourceTree = "<group>"; };
-		6D3A3B82AFBA104D6B66DC7F28899EDC /* SimpleRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SimpleRefresh.framework; path = SimpleRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D3A3B82AFBA104D6B66DC7F28899EDC /* SimpleRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C944ED795068EA1DFE71D9FA3660FA /* Pods-SimpleRefresh_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SimpleRefresh_Example-dummy.m"; sourceTree = "<group>"; };
 		7AFC3DC3E5A1BBEAA72412BD503F97ED /* SimpleRefresh.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleRefresh.xcconfig; sourceTree = "<group>"; };
 		7D4B075A6E4651ABB70CD743E778EA31 /* SimpleRefresh-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleRefresh-prefix.pch"; sourceTree = "<group>"; };
 		88FF680234B05D0FC7E9A002C12F5266 /* Pods-SimpleRefresh_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SimpleRefresh_Tests.modulemap"; sourceTree = "<group>"; };
 		90F21AB65F302206A27692E617210BDD /* NormalFooterAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NormalFooterAnimation.swift; path = SimpleRefresh/Classes/NormalFooterAnimation.swift; sourceTree = "<group>"; };
 		9781715A9F760E1377B1256BE3F091B6 /* Pods-SimpleRefresh_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SimpleRefresh_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E806A1D182C1B8892D32F93337AB5DE /* Pods-SimpleRefresh_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleRefresh_Example-Info.plist"; sourceTree = "<group>"; };
-		A6BE8CCED2BBCDF24A828E5C4C0FEA6A /* Pods_SimpleRefresh_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SimpleRefresh_Example.framework; path = "Pods-SimpleRefresh_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AABC1862924A39B48C868C3F38AF9A53 /* NormalAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NormalAnimation.swift; path = SimpleRefresh/Classes/NormalAnimation.swift; sourceTree = "<group>"; };
-		B08E06B02399658325361359A9CA3D63 /* UIScrollView+Simple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+Simple.swift"; path = "SimpleRefresh/Classes/UIScrollView+Simple.swift"; sourceTree = "<group>"; };
+		A6BE8CCED2BBCDF24A828E5C4C0FEA6A /* Pods_SimpleRefresh_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleRefresh_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AABC1862924A39B48C868C3F38AF9A53 /* DefaultAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultAnimation.swift; path = SimpleRefresh/Classes/DefaultAnimation.swift; sourceTree = "<group>"; };
+		B08E06B02399658325361359A9CA3D63 /* UIScrollView+Smp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+Smp.swift"; path = "SimpleRefresh/Classes/UIScrollView+Smp.swift"; sourceTree = "<group>"; };
 		B8681E409A91EB7D484E0619D17166B3 /* Simple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Simple.swift; path = SimpleRefresh/Classes/Simple.swift; sourceTree = "<group>"; };
 		BB4274515EE34FCA4EC8C74C5EA25EE1 /* DispatchQueue+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Ext.swift"; path = "SimpleRefresh/Classes/DispatchQueue+Ext.swift"; sourceTree = "<group>"; };
 		C00B31CC7FF1942171AC7BB8D99DEBC9 /* Pods-SimpleRefresh_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SimpleRefresh_Example-umbrella.h"; sourceTree = "<group>"; };
-		C390A79BEBB2042431FE80A6D67ACCDF /* SimpleRefreshControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleRefreshControl.swift; path = SimpleRefresh/Classes/SimpleRefreshControl.swift; sourceTree = "<group>"; };
-		C3D62300FC7C5E15819F2E01550F4347 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C390A79BEBB2042431FE80A6D67ACCDF /* SmpRefreshControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SmpRefreshControl.swift; path = SimpleRefresh/Classes/SmpRefreshControl.swift; sourceTree = "<group>"; };
+		C3D62300FC7C5E15819F2E01550F4347 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C3F3507E8E75FBC0FC13311E75ED0E34 /* Pods-SimpleRefresh_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SimpleRefresh_Example.modulemap"; sourceTree = "<group>"; };
 		C56EE82D94686F77EAC1ADB4E513E77F /* Pods-SimpleRefresh_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleRefresh_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CA395C8B59319B88E5AF4D6B804E463C /* Pods-SimpleRefresh_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleRefresh_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E587081D91F34907DB4FCCB909BB2E54 /* SimpleRefresh-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SimpleRefresh-Info.plist"; sourceTree = "<group>"; };
-		F54BF0F51BDC8FF7397035387D0AA054 /* SimpleAnimationProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleAnimationProxy.swift; path = SimpleRefresh/Classes/SimpleAnimationProxy.swift; sourceTree = "<group>"; };
+		F54BF0F51BDC8FF7397035387D0AA054 /* SmpAnimationProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SmpAnimationProxy.swift; path = SimpleRefresh/Classes/SmpAnimationProxy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,17 +165,19 @@
 			isa = PBXGroup;
 			children = (
 				BB4274515EE34FCA4EC8C74C5EA25EE1 /* DispatchQueue+Ext.swift */,
-				AABC1862924A39B48C868C3F38AF9A53 /* NormalAnimation.swift */,
+				AABC1862924A39B48C868C3F38AF9A53 /* DefaultAnimation.swift */,
 				90F21AB65F302206A27692E617210BDD /* NormalFooterAnimation.swift */,
-				07B837B3CC35DB91D3ACC97F7E8188EF /* NormalHeaderAnimation.swift */,
+				07B837B3CC35DB91D3ACC97F7E8188EF /* DefaultHeaderAnimation.swift */,
 				B8681E409A91EB7D484E0619D17166B3 /* Simple.swift */,
-				F54BF0F51BDC8FF7397035387D0AA054 /* SimpleAnimationProxy.swift */,
-				113E138909CA8899C57A975F651CA4CE /* SimpleFooterControl.swift */,
-				2ECA612B83C5FE71496BCE9960D3C256 /* SimpleHeaderControl.swift */,
-				C390A79BEBB2042431FE80A6D67ACCDF /* SimpleRefreshControl.swift */,
+				F54BF0F51BDC8FF7397035387D0AA054 /* SmpAnimationProxy.swift */,
+				113E138909CA8899C57A975F651CA4CE /* SmpFooterControl.swift */,
+				2ECA612B83C5FE71496BCE9960D3C256 /* SmpHeaderControl.swift */,
+				C390A79BEBB2042431FE80A6D67ACCDF /* SmpRefreshControl.swift */,
 				1909C37BD2FA56582CA8AA8C6EC407AA /* UIImage+Ext.swift */,
 				1B3AF4345AB06E070D171F952D6E96C3 /* UIScrollView+Ext.swift */,
-				B08E06B02399658325361359A9CA3D63 /* UIScrollView+Simple.swift */,
+				B08E06B02399658325361359A9CA3D63 /* UIScrollView+Smp.swift */,
+				3FFB86B9222F844100BDD1CC /* RefreshType.swift */,
+				3F282E26222FA16A0098E5EB /* Constants.swift */,
 				BF6479E60EAA14BCA79CEB58EC5B5CF0 /* Pod */,
 				D643C43E2658AA9D6955D37425559E68 /* Resources */,
 				F77AD3EFC8C675A55F97810968B3015E /* Support Files */,
@@ -410,18 +416,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				0368C38803AF2117FCA179FC6EEFEF92 /* DispatchQueue+Ext.swift in Sources */,
-				7F8550F4413DA514A246FE2FDDF80E8F /* NormalAnimation.swift in Sources */,
+				7F8550F4413DA514A246FE2FDDF80E8F /* DefaultAnimation.swift in Sources */,
 				40735C695015169FD16CA2B7A3CD4758 /* NormalFooterAnimation.swift in Sources */,
-				F0D9846550049294A6A392EA315E01A6 /* NormalHeaderAnimation.swift in Sources */,
+				F0D9846550049294A6A392EA315E01A6 /* DefaultHeaderAnimation.swift in Sources */,
 				3505B9131769A69D255CD6390B034C9E /* Simple.swift in Sources */,
-				383EECE3E6FA802191C085C1F5CDCE0F /* SimpleAnimationProxy.swift in Sources */,
-				8913D7080D3CE1C06312BCCBA93B220D /* SimpleFooterControl.swift in Sources */,
-				D3B217BF0E83EBE2274E9DE67D7BD1A4 /* SimpleHeaderControl.swift in Sources */,
+				3F282E27222FA16A0098E5EB /* Constants.swift in Sources */,
+				383EECE3E6FA802191C085C1F5CDCE0F /* SmpAnimationProxy.swift in Sources */,
+				8913D7080D3CE1C06312BCCBA93B220D /* SmpFooterControl.swift in Sources */,
+				D3B217BF0E83EBE2274E9DE67D7BD1A4 /* SmpHeaderControl.swift in Sources */,
 				6AB1B6C53F54D647FE3FC7683A4B3FC4 /* SimpleRefresh-dummy.m in Sources */,
-				BD64D24CF52B7D6C96724BEDD59765B5 /* SimpleRefreshControl.swift in Sources */,
+				3FFB86BA222F844100BDD1CC /* RefreshType.swift in Sources */,
+				BD64D24CF52B7D6C96724BEDD59765B5 /* SmpRefreshControl.swift in Sources */,
 				D218E0AF1776F0B1D95244202FA87F7F /* UIImage+Ext.swift in Sources */,
 				570D6907EDDA85A4AF597584858F5BB4 /* UIScrollView+Ext.swift in Sources */,
-				D45DEBED0BDEEBAE104D1B160619891D /* UIScrollView+Simple.swift in Sources */,
+				D45DEBED0BDEEBAE104D1B160619891D /* UIScrollView+Smp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,8 +520,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};

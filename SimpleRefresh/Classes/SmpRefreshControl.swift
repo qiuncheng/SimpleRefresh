@@ -8,15 +8,15 @@
 
 import class UIKit.UIControl
 
-public class SimpleRefreshControl: UIControl {
+public class SmpRefreshControl: UIControl {
     
     internal static var kvoContext = "SimplePullToRefreshKVOContext"
-    public let animationView: SimpleAnimationView
+    public let animationView: SmpAnimationView
     
-    public var isRefreshing = false
-    public var previewContentOffsetY: CGFloat = 0
+    public internal(set) var isRefreshing = false
+    public internal(set) var previewContentOffsetY: CGFloat = 0
     
-    public init(frame: CGRect, animationView: SimpleAnimationView) {
+    public init(frame: CGRect, animationView: SmpAnimationView) {
         self.animationView = animationView
         super.init(frame: frame)
     }
@@ -53,7 +53,7 @@ public class SimpleRefreshControl: UIControl {
     }
     
     public override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        guard context == &SimpleRefreshControl.kvoContext, let rawKeyPath = keyPath, let scrollView = object as? UIScrollView else {
+        guard context == &SmpRefreshControl.kvoContext, let rawKeyPath = keyPath, let scrollView = object as? UIScrollView else {
             return
         }
         switch rawKeyPath {
@@ -68,13 +68,13 @@ public class SimpleRefreshControl: UIControl {
     
     private func addScrollViewObserver() {
         guard let superScrollView = superview as? UIScrollView else { return }
-        superScrollView.addObserver(self, forKeyPath: Constants.contentSizeKeyPath, options: [.initial, .new], context: &SimpleRefreshControl.kvoContext)
-        superScrollView.addObserver(self, forKeyPath: Constants.contentOffsetKeyPath, options: [.new], context: &SimpleRefreshControl.kvoContext)
+        superScrollView.addObserver(self, forKeyPath: Constants.contentSizeKeyPath, options: [.initial, .new], context: &SmpRefreshControl.kvoContext)
+        superScrollView.addObserver(self, forKeyPath: Constants.contentOffsetKeyPath, options: [.new], context: &SmpRefreshControl.kvoContext)
     }
     
     private func removeScrollViewObserver() {
         guard let superScrollView = superview as? UIScrollView else { return }
-        superScrollView.removeObserver(self, forKeyPath: Constants.contentSizeKeyPath, context: &SimpleRefreshControl.kvoContext)
-        superScrollView.removeObserver(self, forKeyPath: Constants.contentOffsetKeyPath, context: &SimpleRefreshControl.kvoContext)
+        superScrollView.removeObserver(self, forKeyPath: Constants.contentSizeKeyPath, context: &SmpRefreshControl.kvoContext)
+        superScrollView.removeObserver(self, forKeyPath: Constants.contentOffsetKeyPath, context: &SmpRefreshControl.kvoContext)
     }
 }

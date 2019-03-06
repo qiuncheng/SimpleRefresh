@@ -3,15 +3,16 @@
 //  Copyright © 2018年 Tongzhuo. All rights reserved.
 //
 
-import UIKit.UIControl
+import class UIKit.UIControl
+import class UIKit.UIView
 
-public class SimpleFooterControl: SimpleRefreshControl {
+public class SmpFooterControl: SmpRefreshControl {
     
     private var hasSetContentInsetBottom = false
     internal var waitingForDraw = false
     internal var shouldTrigger = false
     
-    public override init(frame: CGRect, animationView: SimpleAnimationView) {
+    public override init(frame: CGRect, animationView: SmpAnimationView) {
         super.init(frame: frame, animationView: animationView)
         animationView.frame = bounds
         animationView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -39,6 +40,14 @@ public class SimpleFooterControl: SimpleRefreshControl {
         hasSetContentInsetBottom = false
     }
     
+    func setScrollViewContentInset(scrollView: UIScrollView) {
+        guard !hasSetContentInsetBottom else { return }
+        hasSetContentInsetBottom = true
+        var inset = scrollView.smp.contentInsets
+        inset.bottom += animationView.size
+        scrollView.smp.contentInsets = inset
+    }
+    
     override func startRefresh(scrollView: UIScrollView, trigger: Bool) {
         guard self.window != nil else {
             shouldTrigger = trigger
@@ -48,8 +57,10 @@ public class SimpleFooterControl: SimpleRefreshControl {
         guard !isRefreshing else { return }
         isRefreshing = true
         animationView.willStartRefresh(scrollView)
-        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(650)) { [weak self] in
-            guard self != nil else { return }
+        
+        UIView.animate(withDuration: 0.65, animations: { [weak self] in
+            self?.setScrollViewContentInset(scrollView: scrollView)
+        }) { [weak self] (_) in
             if trigger {
                 self?.sendActions(for: .valueChanged)
             }
@@ -60,6 +71,7 @@ public class SimpleFooterControl: SimpleRefreshControl {
         guard isRefreshing else { return }
         animationView.willStopRefresh(scrollView)
         DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(1)) {
+            self.resetScrollViewContentInset(scrollView: scrollView)
             self.isRefreshing = false
             self.frame.origin.y = scrollView.contentSize.height
         }
@@ -73,7 +85,7 @@ public class SimpleFooterControl: SimpleRefreshControl {
         let remainHeight: CGFloat
         if scrollView.contentSize.height > scrollView.frame.height {
             remainHeight = scrollView.contentOffset.y + scrollView.frame.height - scrollView.contentSize.height
-                - (scrollView.contentInset.bottom - animationView.size)
+                - scrollView.contentInset.bottom
             // FIXME: - 底部保留 `contentInset.bottom`
         } else {
             remainHeight = scrollView.contentOffset.y + scrollView.smp.contentInsets.top
@@ -92,11 +104,6 @@ public class SimpleFooterControl: SimpleRefreshControl {
         super.contentSizeDidChange(scrollView)
         guard !isRefreshing else { return }
         frame.origin.y = scrollView.contentSize.height
-        if !hasSetContentInsetBottom {
-            hasSetContentInsetBottom = true
-            var inset = scrollView.smp.contentInsets
-            inset.bottom += animationView.size
-            scrollView.smp.contentInsets = inset
-        }
+
     }
 }

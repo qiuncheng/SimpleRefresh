@@ -9,23 +9,23 @@ import UIKit
 
 extension UIScrollView {
     
-    func addRefreshHeader(_ animationView: SimpleAnimationView?) {
+    func addRefreshHeader(_ animationView: SmpAnimationView?) {
         guard let animationView = animationView else { return }
-        if let header = self.smp.header {
+        if let header = self.smp.refreshControl(for: .header) {
             header.removeFromSuperview()
         }
         layoutIfNeeded()
         let offsetY = -animationView.size
-        let refreshControl: SimpleHeaderControl
+        let refreshControl: SmpHeaderControl
         let frame = CGRect(x: 0, y: offsetY, width: self.frame.width, height: animationView.size)
-        refreshControl = SimpleHeaderControl(frame: frame, animationView: animationView)
+        refreshControl = SmpHeaderControl(frame: frame, animationView: animationView)
         refreshControl.autoresizingMask = [.flexibleWidth]
         refreshControl.tag = Constants.header
         addSubview(refreshControl)
     }
     
     func removeRefreshHeader() {
-        guard let header = self.smp.header else { return }
+        guard let header = self.smp.refreshControl(for: .header) else { return }
         if header.isRefreshing {
             header.stopRefresh(scrollView: self)
             delay(0.21) {
@@ -36,21 +36,21 @@ extension UIScrollView {
         }
     }
     
-    func addRefreshFooter(_ animationView: SimpleAnimationView?) {
+    func addRefreshFooter(_ animationView: SmpAnimationView?) {
         guard let animationView = animationView else { return }
-        if let footer = self.smp.footer {
+        if let footer = self.smp.refreshControl(for: .footer) {
             footer.removeFromSuperview()
         }
         layoutIfNeeded()
         let offsetY = contentSize.height
-        let refreshView = SimpleFooterControl(frame: CGRect(x: 0, y: offsetY, width: frame.width, height: animationView.size), animationView: animationView)
+        let refreshView = SmpFooterControl(frame: CGRect(x: 0, y: offsetY, width: frame.width, height: animationView.size), animationView: animationView)
         refreshView.tag = Constants.footer
         refreshView.autoresizingMask = [.flexibleWidth]
         addSubview(refreshView)
     }
     
     func removeRefreshFooter() {
-        guard let footer = viewWithTag(Constants.footer) as? SimpleFooterControl else { return }
+        guard let footer = viewWithTag(Constants.footer) as? SmpFooterControl else { return }
         if footer.isRefreshing {
             footer.stopRefresh(scrollView: self)
             delay(0.21) {

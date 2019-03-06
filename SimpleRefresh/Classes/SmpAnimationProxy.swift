@@ -5,9 +5,8 @@
 
 import class UIKit.UIScrollView
 
-public protocol SimpleAnimationProxy {
+public protocol SmpAnimationProxy {
     
-    /// defalut is 44
     var size: CGFloat { get }
     
     func willStartRefresh(_ scrollView: UIScrollView)
@@ -16,8 +15,9 @@ public protocol SimpleAnimationProxy {
 }
 
 
-public typealias SimpleAnimationView = (UIView & SimpleAnimationProxy)
+public typealias SmpAnimationView = (UIView & SmpAnimationProxy)
 
-public extension SimpleAnimationProxy where Self: UIView {
-    public var size: CGFloat { return 44.0 }
+public extension SmpAnimationProxy where Self: UIView {
+    /// default is 50.0
+    public var size: CGFloat { return 50 }
 }

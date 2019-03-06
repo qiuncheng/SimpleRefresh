@@ -3,31 +3,33 @@
 //  Copyright © 2018年 Tongzhuo. All rights reserved.
 //
 
-public class NormalFooterAnimation: NormalAnimation {
+import UIKit
+
+public class DefaultFooterAnimation: DefaultAnimation {
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
         imageView.isHidden = false
-        imageView.image = nil
     }
     
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-    }
-    
-    public override func willStartRefresh(_ scrollView: UIScrollView) {
-        super.willStartRefresh(scrollView)
-        imageView.isHidden = true
-    }
-    
-    public override func willStopRefresh(_ scrollView: UIScrollView) {
-        super.willStopRefresh(scrollView)
         imageView.isHidden = false
     }
     
     public override func shouldStartRefresh(_ scrollView: UIScrollView, percent: Float, currentOffsetY: CGFloat, offsetYDidChange change: CGFloat) -> Bool {
-        if percent >= 0.5 && (scrollView.isDragging || scrollView.isDecelerating) {
-            return true
+        if percent >= 1 {
+            if scrollView.isDecelerating && !scrollView.isDragging {
+                return true
+            }
+            UIView.animate(withDuration: 0.2) {
+                self.imageView.transform = CGAffineTransform.identity
+            }
+
+        } else {
+            UIView.animate(withDuration: 0.2) {
+                self.imageView.transform = CGAffineTransform(rotationAngle: Constants.rotationAngle)
+            }
         }
         return false
     }

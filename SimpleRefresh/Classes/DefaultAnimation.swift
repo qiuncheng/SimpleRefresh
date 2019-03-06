@@ -5,10 +5,8 @@
 
 import class UIKit.UIView
 
-open class NormalAnimation: SimpleAnimationView {
-    
-    open var refresherHeight: CGFloat { return 50.0 }
-    
+open class DefaultAnimation: SmpAnimationView {
+        
     public let imageView: UIImageView = {
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
         imageView.contentMode = .scaleAspectFit

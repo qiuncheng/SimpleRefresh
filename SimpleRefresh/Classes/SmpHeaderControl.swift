@@ -5,13 +5,13 @@
 
 import class UIKit.UIScrollView
 
-public class SimpleHeaderControl: SimpleRefreshControl {
+public class SmpHeaderControl: SmpRefreshControl {
     
     internal var isStopAnimating = false
     internal var waitingForDraw = false
     internal var shouldTrigger = false
     
-    public override init(frame: CGRect, animationView: SimpleAnimationView) {
+    public override init(frame: CGRect, animationView: SmpAnimationView) {
         super.init(frame: frame, animationView: animationView)
         animationView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         animationView.frame = bounds

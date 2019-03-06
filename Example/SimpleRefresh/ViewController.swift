@@ -29,12 +29,13 @@ class ViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    tableView.smp.addHeader(AmazingHeader(), target: self, action: #selector(handleHeaderRefresh))
+//    tableView.smp.addHeader(AmazingHeader(), target: self, action: #selector(handleHeaderRefresh))
+    tableView.smp.addRefresh(forType: .header, animationView: AmazingHeader(), target: self, action: #selector(handleHeaderRefresh))
   }
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-    tableView.smp.startHeaderRefresh()
+    tableView.smp.startRefresh(forType: .header)
   }
   
   @objc private func handleHeaderRefresh() {
@@ -50,11 +51,26 @@ class ViewController: UITableViewController {
       sSelf.tableView.reloadData()
       sSelf.title = "刷新完毕"
       
-      if sSelf.tableView.smp.footer == nil {
-        sSelf.tableView.smp.addFooter(NormalFooterAnimation(), target: sSelf, action: #selector(ViewController.handleHeaderRefresh))
+      if sSelf.tableView.smp.refreshControl(for: .footer) == nil {
+        sSelf.tableView.smp.addRefresh(forType: .footer, animationView: DefaultFooterAnimation(), target: sSelf, action: #selector(ViewController.handleFooterRefresh))
       }
-      sSelf.tableView.smp.stopHeaderRefresh()
-      sSelf.tableView.smp.stopFooterRefresh()
+      sSelf.tableView.smp.stopRefresh(forType: .header)
+    }
+  }
+  
+  @objc func handleFooterRefresh() {
+    let otherRandom = Int.random(in: 5 ... 10)
+    DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) { [weak self] in
+      guard let sSelf = self else { return }
+      let arr = Array(0 ... otherRandom).map({ (value) -> String in
+        let random = Int.random(in: 0 ..< sSelf.array2.count)
+        return sSelf.array2[random]
+      })
+      sSelf.array.append(contentsOf: arr)
+      sSelf.title = "刷新完毕"
+      sSelf.tableView.reloadData()
+      
+      sSelf.tableView.smp.stopRefresh(forType: .footer)
     }
   }
   
@@ -79,7 +95,7 @@ class ViewController: UITableViewController {
   }
   
   override func scrollViewDidScrollToTop(_ scrollView: UIScrollView) {
-    tableView.smp.startHeaderRefresh()
+    tableView.smp.startRefresh(forType: .header)
   }
 }
 

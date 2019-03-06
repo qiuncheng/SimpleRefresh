@@ -5,7 +5,7 @@
 
 import UIKit
 
-public class NormalHeaderAnimation: NormalAnimation {
+public class DefaultHeaderAnimation: DefaultAnimation {
     
     public override init(frame: CGRect) {
         super.init(frame: frame)

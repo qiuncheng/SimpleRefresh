@@ -9,7 +9,7 @@
 import UIKit
 import SimpleRefresh
 
-open class AmazingHeader: SimpleAnimationView {
+open class AmazingHeader: SmpAnimationView {
 
   public var size: CGFloat { return 70.0 }
   
