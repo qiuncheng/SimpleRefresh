@@ -11,7 +11,7 @@ extension UIScrollView {
     
     func addRefreshHeader(_ animationView: SmpAnimationView?) {
         guard let animationView = animationView else { return }
-        if let header = self.smp.refreshControl(for: .header) {
+        if let header = self.smp.refreshControl(forType: .header) {
             header.removeFromSuperview()
         }
         layoutIfNeeded()
@@ -25,7 +25,7 @@ extension UIScrollView {
     }
     
     func removeRefreshHeader() {
-        guard let header = self.smp.refreshControl(for: .header) else { return }
+        guard let header = self.smp.refreshControl(forType: .header) else { return }
         if header.isRefreshing {
             header.stopRefresh(scrollView: self)
             delay(0.21) {
@@ -38,7 +38,7 @@ extension UIScrollView {
     
     func addRefreshFooter(_ animationView: SmpAnimationView?) {
         guard let animationView = animationView else { return }
-        if let footer = self.smp.refreshControl(for: .footer) {
+        if let footer = self.smp.refreshControl(forType: .footer) {
             footer.removeFromSuperview()
         }
         layoutIfNeeded()

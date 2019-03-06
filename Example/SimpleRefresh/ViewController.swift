@@ -51,7 +51,7 @@ class ViewController: UITableViewController {
       sSelf.tableView.reloadData()
       sSelf.title = "刷新完毕"
       
-      if sSelf.tableView.smp.refreshControl(for: .footer) == nil {
+      if sSelf.tableView.smp.refreshControl(forType: .footer) == nil {
         sSelf.tableView.smp.addRefresh(forType: .footer, animationView: DefaultFooterAnimation(), target: sSelf, action: #selector(ViewController.handleFooterRefresh))
       }
       sSelf.tableView.smp.stopRefresh(forType: .header)
