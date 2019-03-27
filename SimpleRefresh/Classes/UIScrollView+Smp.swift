@@ -7,7 +7,7 @@ import class UIKit.UIScrollView
 
 public extension Simple where Base: UIScrollView {
     
-    public var contentInsets: UIEdgeInsets {
+    var contentInsets: UIEdgeInsets {
         get {
             if #available(iOS 11.0, *) {
                 return base.adjustedContentInset
@@ -31,11 +31,11 @@ public extension Simple where Base: UIScrollView {
 
 public extension Simple where Base: UIScrollView {
     
-    public func animationView(forType type: RefreshType) -> SmpAnimationView? {
+    func animationView(forType type: RefreshType) -> SmpAnimationView? {
         return refreshControl(forType: type)?.animationView
     }
     
-    public func refreshControl(forType type: RefreshType) -> SmpRefreshControl? {
+    func refreshControl(forType type: RefreshType) -> SmpRefreshControl? {
         switch type {
         case .header:
             return base.viewWithTag(Constants.header) as? SmpHeaderControl
@@ -44,7 +44,7 @@ public extension Simple where Base: UIScrollView {
         }
     }
     
-    public func addRefresh(forType type: RefreshType, animationView: SmpAnimationView) {
+    func addRefresh(forType type: RefreshType, animationView: SmpAnimationView) {
         switch type {
         case .header:
             base.addRefreshHeader(animationView)
@@ -53,28 +53,28 @@ public extension Simple where Base: UIScrollView {
         }
     }
     
-    public func addRefresh(forType type: RefreshType, animationView: SmpAnimationView, target: Any?, action: Selector) {
+    func addRefresh(forType type: RefreshType, animationView: SmpAnimationView, target: Any?, action: Selector) {
         addRefresh(forType: type, animationView: animationView)
         let control = self.refreshControl(forType: type)
         control?.addTarget(target, action: action, for: .valueChanged)
     }
     
-    public func startRefresh(forType type: RefreshType) {
+    func startRefresh(forType type: RefreshType) {
         let control = self.refreshControl(forType: type)
         control?.startRefresh(scrollView: base, trigger: true)
     }
     
-    public func startAnimation(forType type: RefreshType) {
+    func startAnimation(forType type: RefreshType) {
         let control = self.refreshControl(forType: type)
         control?.startRefresh(scrollView: base, trigger: false)
     }
     
-    public func stopRefresh(forType type: RefreshType) {
+    func stopRefresh(forType type: RefreshType) {
         let control = self.refreshControl(forType: type)
         control?.stopRefresh(scrollView: base)
     }
     
-    public func removeRefresh(forType type: RefreshType) {
+    func removeRefresh(forType type: RefreshType) {
         switch type {
         case .header:
             base.removeRefreshHeader()

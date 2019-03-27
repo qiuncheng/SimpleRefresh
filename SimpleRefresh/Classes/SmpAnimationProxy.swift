@@ -19,5 +19,5 @@ public typealias SmpAnimationView = (UIView & SmpAnimationProxy)
 
 public extension SmpAnimationProxy where Self: UIView {
     /// default is 50.0
-    public var size: CGFloat { return 50 }
+    var size: CGFloat { return 50 }
 }

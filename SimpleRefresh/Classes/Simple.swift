@@ -19,7 +19,7 @@ public protocol SimpleCompatible {
 
 
 public extension SimpleCompatible {
-    public var smp: Simple<Self> {
+    var smp: Simple<Self> {
         get { return Simple(self) }
         set { }
     }
