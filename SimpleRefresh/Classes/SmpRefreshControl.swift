@@ -19,6 +19,7 @@ public class SmpRefreshControl: UIControl {
     public init(frame: CGRect, animationView: SmpAnimationView) {
         self.animationView = animationView
         super.init(frame: frame)
+        backgroundColor = .clear
     }
     
     public required init?(coder aDecoder: NSCoder) {
