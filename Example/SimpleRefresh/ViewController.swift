@@ -52,7 +52,7 @@ class ViewController: UITableViewController {
       sSelf.title = "刷新完毕"
       
       if sSelf.tableView.smp.refreshControl(forType: .footer) == nil {
-        sSelf.tableView.smp.addRefresh(forType: .footer, animationView: DefaultFooterAnimation(), target: sSelf, action: #selector(ViewController.handleFooterRefresh))
+        sSelf.tableView.smp.addRefresh(forType: .footer, animationView: StateFooterAnimation(), target: sSelf, action: #selector(ViewController.handleFooterRefresh))
       }
       sSelf.tableView.smp.stopRefresh(forType: .header)
     }
@@ -71,6 +71,8 @@ class ViewController: UITableViewController {
       sSelf.tableView.reloadData()
       
       sSelf.tableView.smp.stopRefresh(forType: .footer)
+      let stateView = sSelf.tableView.smp.animationView(forType: .footer) as? StateFooterAnimation
+      stateView?.state = .noMoreData
     }
   }
   
