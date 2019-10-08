@@ -4,6 +4,7 @@ use_frameworks!
 
 target 'SimpleRefresh_Example' do
   pod 'SimpleRefresh', :path => '../'
+  pod 'pop'
 
   target 'SimpleRefresh_Tests' do
     inherit! :search_paths

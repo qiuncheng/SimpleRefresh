@@ -1,16 +1,23 @@
 PODS:
-  - SimpleRefresh (0.0.2)
+  - pop (1.0.12)
+  - SimpleRefresh (0.0.6)
 
 DEPENDENCIES:
+  - pop
   - SimpleRefresh (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - pop
 
 EXTERNAL SOURCES:
   SimpleRefresh:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SimpleRefresh: fe7c48b0c0d4bdacb48264d3038913d9c0ebb7bb
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  SimpleRefresh: 70ad0f5f0c5ff78f88c4f82641c1413b3f340f6e
 
-PODFILE CHECKSUM: 4556a782c159e7325246866ad866feb30aa1aca9
+PODFILE CHECKSUM: cd5cd33c4132b0f9521e3aba10f295e7d5923b9a
 
 COCOAPODS: 1.6.1

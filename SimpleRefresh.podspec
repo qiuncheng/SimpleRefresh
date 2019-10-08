@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "SimpleRefresh"
-  s.version = "0.0.7"
+  s.version = "0.0.8"
   s.summary = "So simple pull to refresh framework in iOS written by Swift5"
 
   s.description = <<-DESC
